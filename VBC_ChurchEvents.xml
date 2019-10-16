@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE events>
 
+<!DOCTYPE events [
 <!ELEMENT events (event+)>
-<!ELEMENT event (title, date, time, location, description)
+<!ELEMENT event (title, date, time, location, description)>
 <!ATTLIST event type (missions|guest|luncheon|outing|holiday) #REQUIRED>
-!ELEMENT title (#PCDATA)
-!ELEMENT date (#PCDATA)
-!ELEMENT time (#PCDATA)
-!ELEMENT location (#PCDATA)
-!ELEMENT description (#PCDATA)
-
+!ELEMENT title (#PCDATA)>
+!ELEMENT date (#PCDATA)>
+!ELEMENT time (#PCDATA)>
+!ELEMENT location (#PCDATA)>
+!ELEMENT description (#PCDATA)>
+]>
 
 <events>
   <event type="guest">
